@@ -8,17 +8,18 @@ public:
     ~Plants();
 
     void atacarZumbis();
-    void defender();
+    void receberAtaque();
     void mover();
     void produzirSois();
 
 private:
 
+    char nomePlanta;
     int resistencia;
     float recarga;
     int alcance;
-    int habilidade;
     int dano;
+    bool desbloqueado;
     
 };
 
