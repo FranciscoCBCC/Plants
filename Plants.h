@@ -5,6 +5,8 @@ class Plants
 {
 public:
     Plants();
+    Plants(string nomePlanta &);
+    Plants(const Plants &);
     ~Plants();
 
     void atacarZumbis();
@@ -20,6 +22,8 @@ private:
     int alcance;
     int dano;
     bool desbloqueado;
+    static int numPlantas;
+    
     
 };
 

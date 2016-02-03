@@ -3,7 +3,7 @@
 #include <string.h>
 using std::cout;
 
-
+int Plants::numPlantas = 0;
 
 Plants::Plants()
 {
@@ -14,6 +14,27 @@ Plants::Plants()
     dano = 0;
     desbloqueado = false;
 }
+
+Plants::Plants(const Plants &out)
+{
+    nomePlanta = out.nomePlanta;
+    resistencia = 100;
+    recarga = 100;
+    alcance = 0;
+    dano = 0;
+    desbloqueado
+}
+
+Plants::Plants(string &nomePlanta)
+{
+        this.nomePlanta = nomePlanta;
+        resistencia = 100;
+        recarga = 100;
+        alcance = 0;
+        dano = 0;
+        desbloqueado = false;
+}
+
 
 Plants::~Plants()
 {
