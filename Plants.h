@@ -7,7 +7,7 @@ class Plants
 {
 public:
     Plants();
-    Plants(string nomePlanta);
+    Plants(const string &nomePlanta);
     Plants(const Plants &);
     ~Plants();
 
