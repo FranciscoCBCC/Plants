@@ -1,5 +1,7 @@
 #ifndef PLANTS_H
 #define PLANTS_H
+#include <string>
+using std::string;
 
 class Plants
 {
@@ -13,19 +15,19 @@ public:
     void receberAtaque();
     void mover();
     void produzirSois();
-    void definirDataVersao(Data);
+//  void definirDataVersao(Data);
     void definirNumPlantas(int);
 
 private:
 
-    char nomePlanta;
+    string nomePlanta;
     int resistencia;
     float recarga;
     int alcance;
     int dano;
     bool desbloqueado;
     static int numPlantas;
-    static Data dataVersao;
+//  static Data dataVersao;
     
     
     

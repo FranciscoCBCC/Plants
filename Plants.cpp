@@ -1,13 +1,13 @@
 #include "Plants.h"
 #include <iostream>
-#include <string.h>
+#include <string>
 using std::cout;
 
 int Plants::numPlantas = 0;
 
 Plants::Plants()
 {
-    nomePlanta = 0;
+    nomePlanta = "";
     resistencia = 100;
     recarga = 100;
     alcance = 0;
@@ -22,7 +22,7 @@ Plants::Plants()
     //recarga = 100;
     //alcance = 0;
     //dano = 0;
-    //desbloqueado
+    //desbloqueado = true;
 //}
 
 //Plants::Plants(string nomePlanta &)
