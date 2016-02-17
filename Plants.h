@@ -13,6 +13,8 @@ public:
     void receberAtaque();
     void mover();
     void produzirSois();
+    void definirDataVersao(Data);
+    void definirNumPlantas(int);
 
 private:
 
@@ -23,6 +25,8 @@ private:
     int dano;
     bool desbloqueado;
     static int numPlantas;
+    static Data dataVersao;
+    
     
     
 };

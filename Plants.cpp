@@ -15,9 +15,9 @@ Plants::Plants()
     desbloqueado = false;
 }
 
-Plants::Plants(const Plants &out)
+Plants::Plants(const Plants &)
 {
-    nomePlanta = out.nomePlanta;
+    nomePlanta = "Girassol";
     resistencia = 100;
     recarga = 100;
     alcance = 0;
@@ -27,7 +27,7 @@ Plants::Plants(const Plants &out)
 
 Plants::Plants(string &nomePlanta)
 {
-        this.nomePlanta = nomePlanta;
+        nomePlanta = "";
         resistencia = 100;
         recarga = 100;
         alcance = 0;
@@ -59,4 +59,13 @@ void Plants::atacarZumbis( )
     }
     else
         cout << "Plant bloqueado!" << '\n';    
+}
+
+void Plants::definirNumPlantas(int numPlantas)
+{
+    do 
+    {
+        numPlantas++;
+    }
+    while(desbloqueado);
 }
