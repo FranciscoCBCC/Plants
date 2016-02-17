@@ -15,25 +15,25 @@ Plants::Plants()
     desbloqueado = false;
 }
 
-Plants::Plants(const Plants &)
-{
-    nomePlanta = "Girassol";
-    resistencia = 100;
-    recarga = 100;
-    alcance = 0;
-    dano = 0;
-    desbloqueado
-}
+//Plants::Plants(const Plants &)
+//{
+    //nomePlanta = "Girassol";
+    //resistencia = 100;
+    //recarga = 100;
+    //alcance = 0;
+    //dano = 0;
+    //desbloqueado
+//}
 
-Plants::Plants(string &nomePlanta)
-{
-        nomePlanta = "";
-        resistencia = 100;
-        recarga = 100;
-        alcance = 0;
-        dano = 0;
-        desbloqueado = false;
-}
+//Plants::Plants(string nomePlanta &)
+//{
+        //nomePlanta = "Girassol";
+        //resistencia = 100;
+        //recarga = 100;
+        //alcance = 0;
+        //dano = 0;
+        //desbloqueado = false;
+//}
 
 
 Plants::~Plants()
