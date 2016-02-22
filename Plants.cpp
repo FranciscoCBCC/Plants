@@ -13,27 +13,17 @@ Plants::Plants()
     alcance = 0;
     dano = 0;
     desbloqueado = false;
+    numPlantas = 0;
 }
 
-//Plants::Plants(const Plants &)
-//{
-    //nomePlanta = "Girassol";
-    //resistencia = 100;
-    //recarga = 100;
-    //alcance = 0;
-    //dano = 0;
-    //desbloqueado = true;
-//}
-
-//Plants::Plants(string nomePlanta &)
-//{
-        //nomePlanta = "Girassol";
-        //resistencia = 100;
-        //recarga = 100;
-        //alcance = 0;
-        //dano = 0;
-        //desbloqueado = false;
-//}
+Plants::Plants(string nomePlanta, int resistencia, int recarga, int alcance, int dano, bool desbloqueado){
+    nomePlanta = nomePlanta;
+    resistencia = resistencia;
+    recarga = recarga;
+    alcance = alcance;
+    dano = dano;
+    desbloqueado = desbloqueado;
+}
 
 
 Plants::~Plants()

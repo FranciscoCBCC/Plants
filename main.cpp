@@ -7,11 +7,13 @@ using std::cin;
 #include "Plants.h"
 int main(int argc, char **argv)
 {
-    Plants planta1;
+    Plants planta1("Girassol", 100, 100, 50, 30, );
+    
+    cout<<"Jogo Iniciado!\n";
     
     planta1.atacarZumbis();
     planta1.receberAtaque();
     
-	printf("hello world\n");
-	return 0;
+    
+    return 0;
 }

@@ -7,8 +7,7 @@ class Plants
 {
 public:
     Plants();
-    Plants(const string &nomePlanta);
-    Plants(const Plants &);
+    Plants(string, int, int, int, int, bool);
     ~Plants();
 
     void atacarZumbis();
@@ -17,6 +16,7 @@ public:
     void produzirSois();
 //  void definirDataVersao(Data);
     void definirNumPlantas(int);
+    void alterarNumPlantas(int);
 
 private:
 
@@ -25,8 +25,12 @@ private:
     float recarga;
     int alcance;
     int dano;
+    int numPlantasVivas;
     bool desbloqueado;
     static int numPlantas;
+    
+    
+    
 //  static Data dataVersao;
     
     
