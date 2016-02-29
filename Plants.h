@@ -13,10 +13,9 @@ public:
     void atacarZumbis();
     void receberAtaque();
     void mover();
-    void produzirSois();
-//  void definirDataVersao(Data);
+    void definirDataVersao(Data);
     void definirNumPlantas(int);
-    void alterarNumPlantas(int);
+    static void alterarNumPlantasVivas(int);
 
 private:
 
@@ -25,10 +24,10 @@ private:
     float recarga;
     int alcance;
     int dano;
-    int numPlantasVivas;
     bool desbloqueado;
-    static int numPlantas;
-    
+    Data dataVersao;
+    int numPlantasVivas;
+
     
     
 //  static Data dataVersao;

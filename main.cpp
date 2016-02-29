@@ -7,7 +7,7 @@ using std::cin;
 #include "Plants.h"
 int main(int argc, char **argv)
 {
-    Plants planta1("Girassol", 100, 100, 50, 30, );
+    Plants planta1("Girassol", 100, 100, 50, 30);
     
     cout<<"Jogo Iniciado!\n";
     
