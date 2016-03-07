@@ -1,4 +1,4 @@
-#include Cereja
+#include "Cereja.h"
 
 Cereja::Cereja{
     prontoParaExplodir = true;
