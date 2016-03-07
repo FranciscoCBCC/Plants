@@ -20,3 +20,9 @@ Girassol::produzirSois(){
         cout<<"\nAguarde ate o Girassol produzir o proximo sol\n";
     }
 }
+
+ostream& operator<<(ostream &output, const Girassol &display)
+{
+	output << "\n Quantidade de sois: " << 	display.quantidadeSois;
+    return output;
+}

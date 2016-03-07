@@ -20,3 +20,9 @@ Cereja::explodir(){
         cout<<"\n Cereja não esta pronta para explodir, aguarde...\n";
     }
 }
+
+ostream& operator<<(ostream &output, const Cereja &display)
+{
+	output << "\n Pronto para explodir?: " << 	display.prontoParaExplodir;
+    return output;
+}

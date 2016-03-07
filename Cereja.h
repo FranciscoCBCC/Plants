@@ -5,8 +5,9 @@
 
 class Cereja : public Plants
 {
+    friend ostream& operator<<(ostream &, const Cereja & );
 public:
-    friend ostream &operator<<(ostream &, const Cereja & );
+    
     Cereja();
     Cereja(bool);
     ~Cereja();
