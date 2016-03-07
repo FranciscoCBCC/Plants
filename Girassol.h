@@ -7,7 +7,7 @@ class Girassol : public Plants
 {
 public:
     friend ostream &operator<<(ostream &, const Girassol & );
-    
+    Girassol();
     Girassol(int);
     ~Girassol();
 

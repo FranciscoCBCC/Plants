@@ -1,6 +1,6 @@
 #include "Girassol.h"
 
-Girassol::Girassol{
+Girassol::Girassol(){
     quantidadeSois = 0;
 }
 

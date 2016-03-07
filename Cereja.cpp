@@ -1,6 +1,6 @@
 #include "Cereja.h"
 
-Cereja::Cereja{
+Cereja::Cereja(){
     prontoParaExplodir = true;
 }
 
