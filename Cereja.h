@@ -9,7 +9,7 @@ class Cereja : public Plants
 public:
     
     Cereja();
-    Cereja(bool);
+    Cereja(const Cereja &c);
     ~Cereja();
 
 void explodir();

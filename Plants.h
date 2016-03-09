@@ -3,24 +3,19 @@
 #include <string>
 using std::string;
 
-class Plants
+class Plants : public Personagem
 {
 public:
     Plants();
-    Plants(string, int, int, int, int, bool);
+    Plants(const Plants &p);
     ~Plants();
 
-    void atacarZumbis();
-    void receberAtaque();
-    void mover();
     void definirDataVersao(Data);
     void definirNumPlantas(int);
     static void alterarNumPlantasVivas(int);
 
 private:
 
-    string nomePlanta;
-    int resistencia;
     float recarga;
     int alcance;
     int dano;

@@ -9,7 +9,7 @@ class Girassol : public Plants
 public:
     
     Girassol();
-    Girassol(int);
+    Girassol(const Girassol &g);
     ~Girassol();
 
     void produzirSois();

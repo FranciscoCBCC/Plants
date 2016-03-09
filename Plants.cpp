@@ -7,8 +7,6 @@ int Plants::numPlantas = 0;
 
 Plants::Plants()
 {
-    nomePlanta = "";
-    resistencia = 100;
     recarga = 100;
     alcance = 0;
     dano = 0;
