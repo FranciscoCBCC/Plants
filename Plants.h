@@ -1,31 +1,26 @@
 #ifndef PLANTS_H
 #define PLANTS_H
+#include <iostream>
 #include <string>
-using std::string;
+#include "Personagem.h"
 
-class Plants
+using std::string;
+using std::cout;
+
+
+class Plants : public Personagem
 {
+    friend ostream &operator<<(ostream &,const Plants &);
 public:
+    const Plants &operator=(const Plants &);
     Plants();
-    Plants(string, int, int, int, int, bool);
+    Plants(const Plants &);
+    Plants(float, int, int);
     ~Plants();
 
-    void atacarZumbis();
-    void receberAtaque();
-    void mover();
-    void definirDataVersao(Data);
-    void definirNumPlantas(int);
-    static void alterarNumPlantasVivas(int);
-
 private:
-
-    string nomePlanta;
-    int resistencia;
     float recarga;
     int alcance;
-    int dano;
-    bool desbloqueado;
-    Data dataVersao;
     int numPlantasVivas;
 
     

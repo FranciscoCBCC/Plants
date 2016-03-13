@@ -3,12 +3,13 @@
 #include "Plants.h"
 
 
-class Girassol
+class Girassol : public Plants
 {
+    friend ostream& operator<<(ostream &, const Girassol & );
 public:
-    Girassol(){
-        quantidadeSois = 0;
-    }
+    const Girassol &operator=(const Girassol &);
+    Girassol();
+    Girassol(const Girassol &g);
     ~Girassol();
 
     void produzirSois();
@@ -18,8 +19,6 @@ private:
 };
 
 
-class Plants : public Girassol{
-    
-};
+
 
 #endif // GIRASSOL_H

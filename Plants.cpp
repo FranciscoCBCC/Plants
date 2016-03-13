@@ -3,53 +3,43 @@
 #include <string>
 using std::cout;
 
-int Plants::numPlantas = 0;
-
 Plants::Plants()
 {
-    nomePlanta = "";
-    resistencia = 100;
     recarga = 100;
     alcance = 0;
-    dano = 0;
-    desbloqueado = false;
-    numPlantas = 0;
+    numPlantasVivas = 0;
 }
 
-Plants::Plants(string nomePlanta, int resistencia, int recarga, int alcance, int dano, bool desbloqueado){
-    nomePlanta = nomePlanta;
-    resistencia = resistencia;
-    recarga = recarga;
-    alcance = alcance;
-    dano = dano;
-    desbloqueado = desbloqueado;
+Plants::Plants(int recarga, int alcance, int numPlantasVivas){
+    this->recarga = recarga;
+    this->alcance = alcance;
+    this->numPlantasVivas = numPlantasVivas;
 }
 
+Plants::Plants(const Plants &plants)
+{
+    this->recarga = plants.recarga;
+    this->alcance = plants.alcance;
+    this->numPlantasVivas = plants.numPlantasVivas;
+}
+
+ostream &operator<<(ostream &output,const Plants &plants)
+{
+    output << static_cast <Personagem> (plants);
+    output << "\nNome Plants: " << plants.nomePersonagem;
+    return output;
+}
+
+const Plants & Plants::operator=(const Plants &plants)
+{
+    static_cast<Personagem> (*this) = static_cast<Personagem> (plants);
+    this->codigo = plants.codigo;
+}
 
 Plants::~Plants()
 {
 }
-
-void Plants::receberAtaque( )
-{
-    if ( !desbloqueado )
-    {
-        resistencia = resistencia - 10;
-        cout << "Plant recebeu um ataque\n";
-    }
-    else
-        cout << "Plant bloqueado!" << '\n';    
-}
-
-void Plants::atacarZumbis( )
-{
-    if ( !desbloqueado )
-    {
-        cout << "Plant atacou\n";
-    }
-    else
-        cout << "Plant bloqueado!" << '\n';    
-}
+ 
 
 void Plants::definirNumPlantas(int numPlantas)
 {

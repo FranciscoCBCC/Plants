@@ -3,12 +3,13 @@
 #include "Plants.h"
 
 
-class Cereja
+class Cereja : public Plants
 {
+    friend ostream& operator<<(ostream &, const Cereja & );
 public:
-    Cereja(){
-        prontoParaExplodir = true;
-    }
+    const Plants &operator=(const Plants &);
+    Cereja();
+    Cereja(const Cereja &c);
     ~Cereja();
 
 void explodir();
@@ -16,10 +17,6 @@ void explodir();
 protected:
     bool prontoParaExplodir;
 
-};
-
-class Plants : public Cereja{
-    
 };
 
 #endif // CEREJA_H
