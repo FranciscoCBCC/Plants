@@ -10,7 +10,7 @@ Plants::Plants()
     numPlantasVivas = 0;
 }
 
-Plants::Plants(int recarga, int alcance, int numPlantasVivas){
+/*Plants::Plants(int recarga, int alcance, int numPlantasVivas){
     this->recarga = recarga;
     this->alcance = alcance;
     this->numPlantasVivas = numPlantasVivas;
@@ -35,13 +35,13 @@ const Plants & Plants::operator=(const Plants &plants)
     static_cast<Personagem> (*this) = static_cast<Personagem> (plants);
     this->codigo = plants.codigo;
 }
-
+*/
 Plants::~Plants()
 {
 }
  
 
-void Plants::definirNumPlantas(int numPlantas)
+/*void Plants::definirNumPlantas(int numPlantas)
 {
     do 
     {
@@ -49,3 +49,5 @@ void Plants::definirNumPlantas(int numPlantas)
     }
     while(desbloqueado);
 }
+*/
+

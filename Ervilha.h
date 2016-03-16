@@ -1,28 +1,21 @@
-#ifndef PLANTS_H
-#define PLANTS_H
-#include <iostream>
-#include <string>
-#include "Personagem.h"
+#ifndef ERVILHA_H
+#define ERVILHA_H
 
-using std::string;
-using std::cout;
-
-
-class Plants : public Personagem
+class Ervilha : public Plants
 {
 //    friend ostream &operator<<(ostream &,const Plants &);
 public:
 //    const Plants &operator=(const Plants &);
-    Plants();
+    Ervilha();
+    ~Ervilha();
 //    Plants(const Plants &);
 //    Plants(float, int, int);
-    ~Plants();
+
     virtual void defenderSe();
     virtual void atacar();
 
 private:
-    float recarga;
-    int alcance;
+    int qtErvilha;
 //  int numPlantasVivas;
 
     
@@ -33,5 +26,4 @@ private:
     
 };
 
-#endif // PLANTS_H
-
+#endif // ERVILHA_H

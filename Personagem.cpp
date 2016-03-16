@@ -9,16 +9,16 @@ Personagem::Personagem()
     codigo = 0;
 }
 
-Personagem::Personagem(const string &nomePersonagem, int resistencia, int dano, int codigo)
+/*Personagem::Personagem(const string &nomePersonagem, int resistencia, int dano, int codigo)
 {
     this->nomePersonagem = nomePersonagem;
     this->resistencia = resistencia;
     this->dano = dano;
     this->ativo = true;
     this->codigo = codigo;
-}
+}*/
 
-Personagem::Personagem(const Personagem &personagem)
+/*Personagem::Personagem(const Personagem &personagem)
 {
     this->nomePersonagem = personagem.nomePersonagem;
     this->resistencia = personagem.resistencia;
@@ -26,8 +26,8 @@ Personagem::Personagem(const Personagem &personagem)
     this->ativo = personagem.ativo;
     this->codigo = personagem.codigo;
 }
-
-Personagem::atacar(){
+*/
+/*Personagem::atacar(){
     if (ativo == true && resistencia > 0){
         resistencia = resistencia-dano;
         cout << "Nome do personagem atacado: " << nomePersonagem << endl;
@@ -41,8 +41,8 @@ Personagem::defenderSe(){
         cout << "Defeza realizada!" << endl;
     }
 }
-
-ostream &operator<<(ostream &output, const Personagem &personagem)
+*/
+/*ostream &operator<<(ostream &output, const Personagem &personagem)
 {
     output << "Nome Personagem: " << personagem.nomePersonagem << endl;
     output << "Resistencia: " << personagem.resistencia << endl;
@@ -51,8 +51,8 @@ ostream &operator<<(ostream &output, const Personagem &personagem)
     output << "Codigo: " << personagem.codigo << endl;
     return output;
 }
-
-const Personagem& Personagem::operator=(const Personagem &personagem)
+*/
+/*const Personagem& Personagem::operator=(const Personagem &personagem)
 {
     this->nomePersonagem =  personagem.nomePersonagem;
     this->resistencia = personagem.resistencia;
@@ -65,3 +65,4 @@ Personagem::~Personagem()
 {
 }
 
+*/

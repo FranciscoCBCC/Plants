@@ -10,16 +10,16 @@ using namespace std;
 
 class Personagem
 {
-    friend ostream & operator<<(ostream &, const Personagem &);
+//    friend ostream & operator<<(ostream &, const Personagem &);
 public:
     Personagem();
-    Personagem(const Personagem &);
-    Personagem(const string &, int, int, int);
+//    Personagem(const Personagem &);
+//    Personagem(const string &, int, int, int);
     ~Personagem();
-    const Personagem &operator=(const Personagem &);
-    void defenderSe();
-    void atacar();
-//    void definirDataVersao(Data);
+//    const Personagem &operator=(const Personagem &);
+    virtual void defenderSe() = 0;
+    virtual void atacar() = 0;
+//  virtual void definirDataVersao(Data);
         
 protected:
     string nomePersonagem;
