@@ -12,13 +12,24 @@ Cereja::Cereja(bool status){
 Cereja::~Cereja(){
     }
     
-Cereja::explodir(){
-    if (prontoParaExplodir == true){
-        cout<<"\nCereja explodiu\n";
+
+
+Cereja::defenderSe(){
+        if (Personagem::receberAtaque()){
+            Cereja:atacar();
+        }
     }
-    else{
-        cout<<"\n Cereja não esta pronta para explodir, aguarde...\n";
-    }
+    
+Cereja::atacar(){
+        Cereja::explodir(){
+        if (prontoParaExplodir == true){
+            cout<<"\nCereja explodiu\n";
+            }
+        else{
+            cout<<"\n Cereja não esta pronta para explodir, aguarde...\n";
+            }
+        }
+
 }
 
 ostream& operator<<(ostream &output, const Cereja &display)
