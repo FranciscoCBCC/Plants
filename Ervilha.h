@@ -2,6 +2,7 @@
 #define ERVILHA_H
 
 class Ervilha : public Plants
+
 {
 //    friend ostream &operator<<(ostream &,const Plants &);
 public:
