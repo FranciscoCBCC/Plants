@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-#include "Ervilha.h"
+#include "Personagem.h.h"
 using std::cout;
 using std::cin;
 
@@ -8,7 +8,8 @@ using std::cin;
 
 int main(int argc, char **argv)
 {
-    cout << "Disparando Ervilha";
+   vector < Personagem * > personagens( 5 );
+    
     
     return 0;
 }

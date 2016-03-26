@@ -9,7 +9,16 @@ Plants::Plants()
     alcance = 0;
     numPlantasVivas = 0;
 }
-
+Plants::defenderSe(){
+        if (Personagem::receberAtaque()){
+            Plants:atacar();
+        }
+    }
+    
+Plants::atacar(){
+        cout << "\nNome da planta: ", Personagem::nomePersonagem;
+        cout << "\nPlants atacou";
+    }
 /*Plants::Plants(int recarga, int alcance, int numPlantasVivas){
     this->recarga = recarga;
     this->alcance = alcance;

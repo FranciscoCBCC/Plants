@@ -9,14 +9,21 @@ Personagem::Personagem()
     codigo = 0;
 }
 
-/*Personagem::Personagem(const string &nomePersonagem, int resistencia, int dano, int codigo)
+
+Personagem::Personagem(const string &nomePersonagem, int resistencia, int dano, int codigo)
 {
     this->nomePersonagem = nomePersonagem;
     this->resistencia = resistencia;
     this->dano = dano;
     this->ativo = true;
     this->codigo = codigo;
-}*/
+}
+
+Personagem::receberAtaque(){
+    if (ativo==true){
+        vida = vida-dano;
+    }
+}
 
 /*Personagem::Personagem(const Personagem &personagem)
 {

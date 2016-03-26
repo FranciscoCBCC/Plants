@@ -10,6 +10,8 @@ public:
     const Plants &operator=(const Plants &);
     Cereja();
     Cereja(const Cereja &c);
+    virtual void defenderSe();
+    virtual void atacar();
     ~Cereja();
 
 void explodir();
