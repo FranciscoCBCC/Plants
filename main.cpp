@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include "Personagem.h"
+#include "Ervilha.h"
+#include "Cereja.h"
 using std::cout;
 using std::cin;
 
