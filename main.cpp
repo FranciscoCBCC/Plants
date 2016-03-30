@@ -13,12 +13,10 @@ int main(int argc, char **argv)
    vector < Personagem * > personagens( 2 );
     
     personagens.push_back(&ervilha);
-    personagens.push_back(&cereja);
 
         
     for (size_t i = 0; i < personagens.size(); i++) {
              Ervilha *derivedPtr = dynamic_cast<Ervilha*> (personagens[i]);
-             Cereja *derivedPtr2 = dynamic_cast<Cereja*> (personagens[i]);
              if (derivedPtr != 0) 
                       {
                         personagem.ervilha(*derivedPtr, 10);
