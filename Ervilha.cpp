@@ -2,7 +2,7 @@
 
 Ervilha::Ervilha()
 {
-    
+    cout<<"Foi criado o objeto ervilha";
 }
 
     Ervilha::defenderSe(){

@@ -1,6 +1,7 @@
 #include "Girassol.h"
 
 Girassol::Girassol(){
+    cout<<"Foi criado o objeto Girassol";
     quantidadeSois = 0;
 }
 

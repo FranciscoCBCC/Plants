@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Personagem.h"
 #include "Ervilha.h"
-#include "Cereja.h"
+#include "Girassol.h"
 using std::cout;
 using std::cin;
 
@@ -10,22 +10,23 @@ using std::cin;
 
 int main(int argc, char **argv)
 {
-   vector < Personagem * > personagens( 2 );
+   vector < Personagem * > personagens( 4 );
     
-    personagens.push_back(&ervilha);
-
+    personagens.push_back(&ervilha1);
+    personagens.push_back(&ervilha2);
+    personagens.push_back(&girassol1);
+    personagens.push_back(&girassol2);
         
     for (size_t i = 0; i < personagens.size(); i++) {
-             Ervilha *derivedPtr = dynamic_cast<Ervilha*> (personagens[i]);
-             if (derivedPtr != 0) 
+             Ervilha *ervilhaPtr = dynamic_cast<Ervilha*> (personagens[i]);
+             if (ervilhaPtr != 0) 
                       {
-                        personagem.ervilha(*derivedPtr, 10);
-                         
+                        personagem.ervilha1(*derivedPtr, 10);
                         cout << *derivedPtr;                         
                       }
              if (derivedPtr2 != 0)
                       {
-                        personagem.cereja(*derivedPtr2, 20);
+                        personagem.ervilha2(*derivedPtr2, 20);
                         cout << *derivedPtr2; 
                       }
 }
