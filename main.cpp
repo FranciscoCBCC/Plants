@@ -20,21 +20,15 @@ int main(int argc, char **argv)
     personagens.push_back(&girassol2);
         
     for (size_t i = 0; i < personagens.size(); i++) {
+            
              Ervilha *ervilhaPtr = dynamic_cast<Ervilha*> (personagens[i]);
-             if (ervilhaPtr != 0) 
-                      {
-                        personagem.ervilha1(*derivedPtr, 10);
-                        cout << "Ervilha 1 Defendeu-se" << derivedPtr->defenderSe();  
-                        personagem.ervilha2(*derivedPtr, 20);
-                        cout << "Ervilha 2 Atacou" << derivedPtr->atacar();                       
-                      }
-             else
-                      {
-                        personagem.girassol1(*derivedPtr, 40);
-                        cout << "Girassol 1 Atacou" << *derivedPtr->atacar();
-                        personagem.girassol2(*derivedPtr, 30);
-                        cout << "Girassol 2 Defendeu-se" <<*derivedPtr->defenderSe(); 
-                      }
+             if(ervilhaPtr!=0 && zumbiEscudeiro()==true){
+                 ervilhaPtr->boosterAttack();
+                 cout<<"\nErvilha atacou";
+                 cout<<"\nErvilha evoluiu";
+             }
+             personagens[i]->atacar();
+             personagens[i]->defenderSe();
 }
     for ( size_t j = 0; j < personagens.size(); j++ )
      {
