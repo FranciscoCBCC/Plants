@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <vector>
 #include <iostream>
 #include "Personagem.h"
 #include "Ervilha.h"
 #include "Girassol.h"
 using std::cout;
 using std::cin;
+using std::vector;
 
 
 
@@ -22,12 +24,16 @@ int main(int argc, char **argv)
              if (ervilhaPtr != 0) 
                       {
                         personagem.ervilha1(*derivedPtr, 10);
-                        cout << *derivedPtr;                         
+                        cout << "Ervilha 1 Defendeu-se" << derivedPtr->defenderSe();  
+                        personagem.ervilha2(*derivedPtr, 20);
+                        cout << "Ervilha 2 Atacou" << derivedPtr->atacar();                       
                       }
-             if (derivedPtr2 != 0)
+             else
                       {
-                        personagem.ervilha2(*derivedPtr2, 20);
-                        cout << *derivedPtr2; 
+                        personagem.girassol1(*derivedPtr, 40);
+                        cout << "Girassol 1 Atacou" << *derivedPtr->atacar();
+                        personagem.girassol2(*derivedPtr, 30);
+                        cout << "Girassol 2 Defendeu-se" <<*derivedPtr->defenderSe(); 
                       }
 }
     for ( size_t j = 0; j < personagens.size(); j++ )
