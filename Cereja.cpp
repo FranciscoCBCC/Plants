@@ -35,6 +35,9 @@ Cereja::atacar(){
 Cereja::fazerFotossíntese(){
         if(Personagem::ativo){
             cout<<"Fazendo fotossintese...";
+            Personagem::resistencia++;
+            Cereja::prontoParaExplodir = true;
+            
         }
         else
             cout<<"Cereja nao desbloqueada";
@@ -43,6 +46,7 @@ Cereja::fazerFotossíntese(){
     Cereja::crescer(){
         if(Personagem::ativo){
             Personagem::resistencia++;
+            Personagem::life++;
             cout<<"Cereja esta mais forte";
         }
         else

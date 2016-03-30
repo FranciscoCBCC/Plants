@@ -38,14 +38,17 @@ Girassol::produzirSois(){
 Girassol::fazerFotossíntese(){
         if(Personagem::ativo){
             cout<<"Fazendo fotossintese...";
+            Personagem::resistencia++;
+            Girassol::quantidadeSois++;            
         }
         else
             cout<<"Girassol nao desbloqueado";
     }
     
-Girassol::crescer(){
+    Girassol::crescer(){
         if(Personagem::ativo){
             Personagem::resistencia++;
+            Personagem::dano++;
             cout<<"Girassol esta mais forte";
         }
         else

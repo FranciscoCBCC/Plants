@@ -21,6 +21,9 @@ Ervilha::Ervilha()
     Ervilha::fazerFotossíntese(){
         if(Personagem::ativo){
             cout<<"Fazendo fotossintese...";
+            Personagem::resistencia++;
+            Ervilha::levelAttack++;
+            
         }
         else
             cout<<"Ervilha nao desbloqueada";
@@ -37,7 +40,7 @@ Ervilha::Ervilha()
     
     Ervilha::boosterAttack(){
         if(Personagem::ativo){
-            Personagem::dano++;
+            Ervilha::levelAttack++;
             cout<<"O ataque esta mais forte";
         }
         else
