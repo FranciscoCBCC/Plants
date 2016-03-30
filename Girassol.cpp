@@ -35,6 +35,24 @@ Girassol::produzirSois(){
     }
 }
 
+Girassol::fazerFotossíntese(){
+        if(Personagem::ativo){
+            cout<<"Fazendo fotossintese...";
+        }
+        else
+            cout<<"Girassol nao desbloqueado";
+    }
+    
+Girassol::crescer(){
+        if(Personagem::ativo){
+            Personagem::resistencia++;
+            cout<<"Girassol esta mais forte";
+        }
+        else
+            cout<<"Girassol nao desbloqueado";
+    }
+
+
 ostream& operator<<(ostream &output, const Girassol &display)
 {
 	output << "\n Quantidade de sois: " << 	display.quantidadeSois;

@@ -12,6 +12,8 @@ public:
     Cereja(const Cereja &c);
     virtual void defenderSe();
     virtual void atacar();
+    virtual void fazerFotossíntese();
+    virtual void crescer();
     ~Cereja();
 
 void explodir();

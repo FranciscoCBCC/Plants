@@ -31,6 +31,7 @@ protected:
     int dano;
     bool ativo;
     int codigo;
+    int life;
 //    Data dataVersao;
     
 };

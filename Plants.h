@@ -19,6 +19,9 @@ public:
     ~Plants();
     virtual void defenderSe();
     virtual void atacar();
+    virtual void fazerFotossíntese() = 0;
+    virtual void crescer() = 0;
+    
 
 private:
     float recarga;

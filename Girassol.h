@@ -15,6 +15,8 @@ public:
     void produzirSois();
     virtual void defenderSe();
     virtual void atacar();
+    virtual void fazerFotossíntese();
+    virtual void crescer();
 private:
     int quantidadeSois;
     

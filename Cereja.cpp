@@ -32,6 +32,23 @@ Cereja::atacar(){
 
 }
 
+Cereja::fazerFotossíntese(){
+        if(Personagem::ativo){
+            cout<<"Fazendo fotossintese...";
+        }
+        else
+            cout<<"Cereja nao desbloqueada";
+    }
+    
+    Cereja::crescer(){
+        if(Personagem::ativo){
+            Personagem::resistencia++;
+            cout<<"Cereja esta mais forte";
+        }
+        else
+            cout<<"Cereja nao desbloqueada";
+    }
+    
 ostream& operator<<(ostream &output, const Cereja &display)
 {
 	output << "\n Pronto para explodir?: " << 	display.prontoParaExplodir;

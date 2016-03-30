@@ -18,6 +18,32 @@ Ervilha::Ervilha()
         cout << "\nErvilha no  estagio 1";
     }
 
+    Ervilha::fazerFotossíntese(){
+        if(Personagem::ativo){
+            cout<<"Fazendo fotossintese...";
+        }
+        else
+            cout<<"Ervilha nao desbloqueada";
+    }
+    
+    Ervilha::crescer(){
+        if(Personagem::ativo){
+            Personagem::resistencia++;
+            cout<<"Ervilha esta mais forte";
+        }
+        else
+            cout<<"Ervilha nao desbloqueada";
+    }
+    
+    Ervilha::boosterAttack(){
+        if(Personagem::ativo){
+            Personagem::dano++;
+            cout<<"O ataque esta mais forte";
+        }
+        else
+            cout<<"Nao pode aumentar o ataque, ervilha bloqueada";
+        
+    }
 
 Ervilha::~Ervilha()
 {

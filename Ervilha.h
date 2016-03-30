@@ -14,9 +14,13 @@ public:
 
     virtual void defenderSe();
     virtual void atacar();
+    virtual void fazerFotossíntese();
+    virtual void crescer();
+    void boosterAttack();
 
 private:
     int qtErvilha;
+    int levelAttack;
 //  int numPlantasVivas;
 
     
