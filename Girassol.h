@@ -13,6 +13,8 @@ public:
     ~Girassol();
 
     void produzirSois();
+    virtual void defenderSe();
+    virtual void atacar();
 private:
     int quantidadeSois;
     

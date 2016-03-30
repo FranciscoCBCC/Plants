@@ -11,6 +11,19 @@ Girassol::Girassol(int sois){
 Girassol::~Girassol(){
     }
     
+Girassol::defenderSe(){
+    if (Personagem::receberAtaque()){
+        Girassol:atacar();
+    }
+}
+    
+Girassol::atacar(){
+    quantidadeDois = 2;
+    cout << "\nNome da planta: ", Personagem::nomePersonagem;
+    cout << "\nQuantidade de sois disparadas por segundo: ", quantidadeSois;
+    cout << "\nGirassol no estagio 1";
+}
+    
 Girassol::produzirSois(){
     if (quantidadeSois == 0){
         quantidadeSois++;
